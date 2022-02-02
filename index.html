@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Javascript Tycoon</title>
+  </head>
+  <body>
+    <nav>
+      <button id="home">Home</button>
+      <button id="about">About</button>
+    </nav>
+    <hr />
+    <h1 id="one">JavaScript Clicker</h1>
+    <button id="pressme" onclick="myFunction()">Press Me</button><br /><br />
+    <div id="white-box-1">
+      <br />
+      <button id="job1">Job 1</button>
+      <button id="job2">Job 2</button>
+      <button id="job3">Job 3</button>
+      <button id="job4">Job 4</button>
+      <button id="job5">Job 5</button>
+    </div>
+    <br />
+    <div id="white-box-2">
+      <br />
+      <h3 id="two">Your Balance is:</h3>
+      <b><h1 id="demo"></h1></b>
+    </div>
+    <script>
+      /*window.onload = timeout();
+      function timeout() {
+        var speed = 1000;
+        const myTimeout = setTimeout(runningtext1, speed);
+      }
+
+      function runningtext1() {
+        var one = "Javascript Clicker";
+
+        document.getElementById("one").innerHTML = one;
+        var speed = 1000;
+        const myTimeout = setTimeout(runningtext2, speed);
+      }
+
+      function runningtext2() {
+        var two = "Your Balance is:";
+
+        document.getElementById("two").innerHTML = two;
+        var speed = 1000;
+        const myTimeout = setTimeout(runningtext3, speed);
+      }
+
+      function runningtext3() {
+        var three = "Press Me";
+
+        document.getElementById("pressme").innerHTML = three;
+      }*/
+
+      var money = 0;
+
+      function myFunction() {
+        money++;
+        console.log("Your Balance is:" + money);
+        document.getElementById("demo").innerHTML = money + "$";
+      }
+
+      function displaystats() {
+        document.getElementById("Speed").innerHTML = speed;
+      }
+    </script>
+  </body>
+</html>
